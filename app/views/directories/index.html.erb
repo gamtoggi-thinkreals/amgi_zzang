@@ -1,0 +1,16 @@
+
+<h1>Listing directories</h1>
+<h1><%= link_to '+', new_directory_path(user_id: current_user.id) %></h1>   
+
+<table>
+<% @directories.each do |directory| %>
+  <tr>
+    <td><%= link_to directory.name, directory %></td>
+    <td><%= link_to 'X', directory, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+

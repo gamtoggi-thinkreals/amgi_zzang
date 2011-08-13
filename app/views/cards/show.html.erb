@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Word:</b>
+  <%= @card.word %>
+</p>
+
+<p>
+  <b>Mean:</b>
+  <%= @card.mean %>
+</p>
+
+<p>
+  <b>Card color:</b>
+  <%= @card.card_color_id %>
+</p>
+
+<p>
+  <b>Directory:</b>
+  <%= @card.directory_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_card_path(@card) %> |
+<%= link_to 'Back', cards_path %>

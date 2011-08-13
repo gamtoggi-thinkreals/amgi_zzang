@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Order:</b>
+  <%= @card_color.order %>
+</p>
+
+<p>
+  <b>Code:</b>
+  <%= @card_color.code %>
+</p>
+
+
+<%= link_to 'Edit', edit_card_color_path(@card_color) %> |
+<%= link_to 'Back', card_colors_path %>

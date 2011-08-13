@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  word: MyString
+  mean: MyString
+  card_color_id: 1
+  directory_id: 1
+
+two:
+  word: MyString
+  mean: MyString
+  card_color_id: 1
+  directory_id: 1

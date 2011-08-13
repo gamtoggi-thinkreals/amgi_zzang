@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AmgiZzang</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "scaffold", "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body> 
+	
+	<p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+	                                 
+	
+	<% current_user.email if current_user %>
+
+<%= yield %>
+               
+
+  <div>
+  	<%= link_to '로그아웃', destroy_user_session_path, method: :delete %> |
+    <%= link_to '문의', '#' %>
+  </div>
+</body>
+</html>
